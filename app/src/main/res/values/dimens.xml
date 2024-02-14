@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tvRightAdderssMargin">115dp</dimen>
+    <dimen name="smallButtonWidth">130dp</dimen>
+    <dimen name="smallButtonHeight">55dp</dimen>
+    <dimen name="mediumSmallButtonWidth">200dp</dimen>
+    <dimen name="mediumButtonHeight">55dp</dimen>
+    <dimen name="edittextHeight">60dp</dimen>
+    <dimen name="buttonCorners">8dp</dimen>
+    <dimen name="mediumCatalogueRowHeight">12sp</dimen>
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Pelis App</string>
+    <string name="txt_login_title">Inicie Sesión</string>
+    <string name="txt_more_info">Ver Detalles</string>
+</resources>
