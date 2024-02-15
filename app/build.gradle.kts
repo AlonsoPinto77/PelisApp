@@ -1,14 +1,15 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("com.google.devtools.ksp")
 }
 
 android {
-    namespace = "com.switchcasetech.pelisapp"
+    namespace = "com.example.pelisapp"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.switchcasetech.pelisapp"
+        applicationId = "com.example.pelisapp"
         minSdk = 26
         targetSdk = 33
         versionCode = 1
@@ -46,7 +47,9 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation(project(mapOf("path" to ":domain")))
     testImplementation("junit:junit:4.13.2")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation ("com.android.support:multidex:1.0.3")
@@ -58,6 +61,13 @@ dependencies {
 
     //di
     implementation("io.insert-koin:koin-android:3.4.2")
+
+    implementation(project(":data"))
+
+    //Glide
+    implementation("com.github.bumptech.glide:glide:4.11.0")
+
+    annotationProcessor("com.github.bumptech.glide:compiler:4.11.0")
 
 
 }
