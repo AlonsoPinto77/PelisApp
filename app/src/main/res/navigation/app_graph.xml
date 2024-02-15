@@ -2,4 +2,18 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/app_graph" />
+    android:id="@+id/app_graph"
+    app:startDestination="@id/loginFragment2">
+    <fragment
+        android:id="@+id/loginFragment2"
+        android:name="com.example.pelisapp.ui.login.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment2_to_catalogueFragment"
+            app:destination="@id/catalogueFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/catalogueFragment"
+        android:name="com.example.pelisapp.ui.catalogue.CatalogueFragment"
+        android:label="CatalogueFragment" />
+</navigation>
