@@ -22,10 +22,11 @@ data class MovieEntity(
     val voteAverage: Float,
     @SerializedName("release_date")
     val releaseDate : String,
-    var page : Int
+    var page : Int,
+    var totalResults: Int
 ): DomainMapper<Movie> {
     override fun mapToDomainModel(): Movie {
         return Movie(id, posterUrl, title, overview,
-            voteAverage, releaseDate, page)
+            voteAverage, releaseDate, page, totalResults)
     }
 }

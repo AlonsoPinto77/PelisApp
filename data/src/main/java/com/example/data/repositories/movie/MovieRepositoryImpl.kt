@@ -12,6 +12,7 @@ class MovieRepositoryImpl(private val api : Api, private val movieDao: MovieDao)
             if (response.results.isNotEmpty()){
                 for(movie in response.results){
                     movie.page = response.page
+                    movie.totalResults = response.totalResults
                     movieList.add(movie.mapToDomainModel())
                 }
             }
